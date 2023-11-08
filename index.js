@@ -132,6 +132,20 @@ async function run() {
         res.send(room);
     });
 
+    app.get('/subscribers', async (req, res) => {
+      // const cursor = await client.db("HotelRelax").collection("Subscriber").find().toArray();
+      const collection = await client.db('HotelRelax').collection('Subscriber').find({}).toArray(function(err, docs) {
+        if (err) {
+          console.error(err);
+          res.status(500).send(err);
+          return;
+        }
+        res.status(200).json(docs);
+      });
+      console.log(collection)
+  }
+  );
+
     // Update single product from id
     app.put('/services/:id', async (req, res) => {
       const id = req.params.id;
