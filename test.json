@@ -1,0 +1,50 @@
+[
+  {
+    "Title": "Cozy City View Single Room",
+    "RoomDescription": "Cozy single room with a view of the city",
+    "PricePerNight": 100,
+    "RoomSize": "20 sqm",
+    "Availability": true,
+    "Remaining": 50,
+    "RoomImages": [
+      "https://i.ibb.co/t8gXx8Y/pexels-andrea-davis-2873951.jpg",
+      "https://i.ibb.co/3mfrZr6/pexels-max-rahubovskiy-6480198.jpg",
+      "https://i.ibb.co/k2xysxY/pexels-pixabay-279746.jpg"
+    ],
+    "SpecialOffers": "Free breakfast",
+    "Category": "Standard",
+    "CategoryDescription": "A standard hotel room typically features a comfortable and well-made queen or king-sized bed with fresh linens and plush pillows. It is often equipped with a bedside table or tables, complete with reading lamps for added convenience. A writing desk with a chair provides a dedicated workspace for guests, accompanied by high-speed internet access for business or leisure needs. In addition, a dresser or wardrobe is available for storing clothing and personal belongings. The room includes an en-suite bathroom furnished with a shower or bathtub, a sink with a counter-top, a toilet, and a mirror. Towels, toiletries, and a hairdryer are commonly provided for guests' use. There is usually a television with cable or satellite channels for entertainment, along with a mini-fridge or minibar for storing snacks and beverages. Climate control via an air conditioning or heating unit ensures a comfortable stay regardless of the weather outside. Furthermore, most rooms come with a telephone for room service or internal communication, as well as an electronic safe for securing valuable items. Finally, soundproofing and blackout curtains are often incorporated to guarantee a peaceful and restful environment for the guests."
+  },
+  {
+    "Title": "Spacious Balcony Double Room",
+    "RoomDescription": "Spacious double room with a balcony",
+    "PricePerNight": 150,
+    "RoomSize": "30 sqm",
+    "Availability": true,
+    "Remaining": 50,
+    "RoomImages": [
+      "https://i.ibb.co/0QC11sM/o-Edkf-Qhylk-premierroom980x300.jpg",
+      "https://i.ibb.co/M2181hX/3-4.jpg",
+      "https://i.ibb.co/dB5DRxb/1.jpg"
+    ],
+    "SpecialOffers": "20% off for extended stays",
+    "Category": "Premier",
+    "CategoryDescription": "A 40sqm modern room with luxury touch in every corner. Our Premier Room offers the most exclusive room and bathroom design with separated standing high pressure rain shower cabin and bathtub. This room also equipped with a 46 LED interactive high definition television with more than 60 channels, I-Home docking station, electric power curtain, and to ensure your comfort, we also provide exclusively customized luxury linen with Egyptian cotton bed sheet, duvet, pillows, all stuffed with down feathers which were selected only from the gooses neck to get you through the night."
+  },
+  {
+    "Title": "Charming Deluxe Room with Loft Bed",
+    "RoomDescription": "Charming Deluxe room with a loft bed",
+    "PricePerNight": 200,
+    "RoomSize": "40 sqm",
+    "Availability": true,
+    "Remaining": 50,
+    "RoomImages": [
+      "https://i.ibb.co/gZdKCB5/d3.jpg",
+      "https://i.ibb.co/J5zKx4x/d2.jpg",
+      "https://i.ibb.co/dB5DRxb/1.jpg"
+    ],
+    "SpecialOffers": "",
+    "Category": "Deluxe",
+    "CategoryDescription": "A Deluxe hotel room offers a spacious and contemporary layout, typically characterized by a multi-level design that provides a unique and inviting atmosphere for guests. The lower level usually features a well-appointed living area furnished with comfortable seating, a coffee table, and possibly a small dining table for added convenience. This area often includes a mini-fridge or minibar for storing refreshments, and a television with access to a variety of entertainment options. An inviting sofa or lounge chairs may also be included, providing a cozy space for relaxation and socializing.Ascending the staircase to the upper level reveals a well-designed sleeping area, often equipped with a luxurious king or queen-sized bed, complemented by high-quality linens and an assortment of plush pillows. Ample closet space and storage options are typically available to accommodate guests' belongings during their stay. The en-suite bathroom, located on one of the levels, may feature modern fixtures such as a spacious shower or a relaxing bathtub, along with a well-lit vanity area, a toilet, and a mirror. A selection of premium toiletries and soft towels are often provided for guests' comfort and convenience."
+  }
+]
