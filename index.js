@@ -126,7 +126,7 @@ async function run() {
     app.put('/services/:id', async (req, res) => {
       const id = req.params.id;
       const updatedProduct = req.body;
-      console.log('updating product', id)
+
       const filter = { Category: id };
       const options = { upsert: true };
       const updateDoc = {
@@ -135,7 +135,7 @@ async function run() {
         },
       };
       const result = await client.db("HotelRelax").collection("services").updateOne(filter, updateDoc, options);
-      console.log(result)
+
       res.send(result);
 
     })
@@ -151,7 +151,7 @@ async function run() {
         },
       };
       const result = await client.db("HotelRelax").collection("services").updateOne(filter, updateDoc, options);
-      console.log(result)
+      
       res.send(result);
     })
     app.delete('/booking/:id', async (req, res) => {
@@ -160,7 +160,7 @@ async function run() {
       console.log('deleting product', id)
       const query = {_id : new ObjectId(id)};
       const result = await client.db("HotelRelax").collection("BookingCart").deleteOne(query);
-      console.log(result)
+
       res.send(result);
     })
 
