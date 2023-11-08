@@ -87,6 +87,16 @@ async function run() {
         console.log(result)
         res.send(result);
     });
+    app.post('/subscribe', async (req, res) => {
+        const User = req.body;
+        console.log(User)
+        const result = await client.db("HotelRelax").collection("Subscriber").insertOne(User);
+        console.log(result)
+        res.send(result);
+    });
+
+
+
     app.post('/bookings', async (req, res) => {
         const product = req.body;
         console.log(product)
