@@ -82,16 +82,16 @@ async function run() {
 
     app.post('/services', async (req, res) => {
         const product = req.body;
-        console.log(product)
+        // console.log(product)
         const result = await client.db("HotelRelax").collection("services").insertOne(product);
-        console.log(result)
+        // console.log(result)
         res.send(result);
     });
     app.post('/subscribe', async (req, res) => {
         const User = req.body;
-        console.log(User)
+        // console.log(User)
         const result = await client.db("HotelRelax").collection("Subscriber").insertOne(User);
-        console.log(result)
+        // console.log(result)
         res.send(result);
     });
 
@@ -99,9 +99,9 @@ async function run() {
 
     app.post('/bookings', async (req, res) => {
         const product = req.body;
-        console.log(product)
+        // console.log(product)
         const result = await client.db("HotelRelax").collection("BookingCart").insertOne(product);
-        console.log(result)
+        // console.log(result)
         res.send(result);
     });
 
@@ -126,7 +126,7 @@ async function run() {
     // get single room from id
     app.get('/:id', async (req, res) => {
         const id = req.params.id;
-        console.log(id)
+        // console.log(id)
         const query = { Category: id };
         const room = await client.db("HotelRelax").collection("services").findOne(query);
         res.send(room);
@@ -166,7 +166,7 @@ async function run() {
     })
     app.delete('/booking/:id', async (req, res) => {
       const id = req.params.id;
-      console.log(id)
+      // console.log(id)
       console.log('deleting product', id)
       const query = {_id : new ObjectId(id)};
       const result = await client.db("HotelRelax").collection("BookingCart").deleteOne(query);
