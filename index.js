@@ -41,16 +41,7 @@ const logger = (req, res, next) => {
   next();
 }
 
-const verifyToken = (req, res, next) => {
-  const token = req?.cookies?.token;
-  if(!token) return res.sendStatus(403);
-  jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
-      if(err) return res.sendStatus(403).send({message: 'Unauthorized'});
-      req.user = decoded;
-      next();
-  }
-  )
-}
+
 
 
 async function run() {
