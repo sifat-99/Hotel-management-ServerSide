@@ -11,7 +11,13 @@ const port = process.env.PORT || 5001;
 
 app.use(cors(
   {
-    origin: ['https://hotel-relax.web.app', 'http://localhost:5173', 'http://localhost:3000'],
+    origin: [
+      // 'http://localhost:',
+      'https://assignment-11-0004.web.app',
+      'https://assignment-11-0004.firebaseapp.com'
+
+    
+    ],
     credentials: true,
   }
 ));
@@ -117,7 +123,7 @@ async function run() {
   );
 
 
-    app.get('/rooms',logger,verifyToken, async (req, res) => {
+    app.get('/rooms',logger, async (req, res) => {
         const cursor = client.db("HotelRelax").collection("services").find({});
         const rooms = await cursor.toArray();
         res.send(rooms);
